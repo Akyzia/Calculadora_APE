@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de área predominantemente edificada</title>
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+</head>
+
+<body>
+    <div>
+    <h1>Calculadora APE</h1>
+
+    <!-- Cálculo da área total do raio -->
+    <h2>Área do raio (m²)</h2>
+    <label for="raio">Raio (m):</label>
+    <input type="number" id="raio" placeholder="Digite o valor do raio">
+    <br><br>
+    <label for="pi">Pi (π):</label>
+    <input type="number" id="pi" value="3.14159" readonly>
+    <br><br>
+    <button id="calcular-btn">Calcular área total do raio</button>
+    <p id="resultado"></p>
+
+ 
+    <!-- Cálculo da área total edificada (ATE) -->
+    <h2>Área total edificada (ATE)</h2>
+    <label for="grid">Tamanho do grid (m²):</label>
+    <input type="number" id="grid" placeholder="Digite a área (m²) do grid">
+    <br><br>
+    <label for="centroides">Nº de centroides:</label>
+    <input type="number" id="centroides" placeholder="Digite o n° de centroides">
+    <br><br>
+    <button id="calcular-ate-btn">Calcular ATE</button>
+    <p id="resultado-ate"></p>
+   
+    <!-- Cálculo da área predominantemente edificada (APE) -->
+    <h2>Área predominantemente edificada (APE)</h2>
+    <label for="percentual">APE edificada (%) desejada:</label>
+    <input type="number" id="percentual" placeholder="Digite o percentual">
+    <br><br>
+    <button id="calcular-ape-btn">Calcular APE</button>
+    <p id="resultado-ape"></p>
+
+    <!-- Script JavaScript -->
+    <script src="javascript/areadoraio.js"></script>
+    <script src="javascript/areaedificada.js"></script>
+    <script src="javascript/areaprededif.js"></script>
+
+    </div>
+</body>
+</html>
+
